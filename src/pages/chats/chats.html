@@ -1,0 +1,66 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{'chats' | translate}}<span class="end">
+                <img src="assets/imgs/ic_search.png" (click)="search()">
+            </span></ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+    <ion-list no-lines>
+        <ion-item class="active" (click)="chatting()">
+            <div class="img-box">
+                <img src="assets/imgs/background.png">
+            </div>
+            <div class="details">
+                <h2 class="text-white d-flex">{{'golden_bakery' | translate}}<span class="end">{{'12_30' | translate}}</span></h2>
+                <p class="text-white d-flex">{{'yes_we_can' | translate}}<span class="end notifications">{{'1' | translate}}</span></p>
+            </div>
+        </ion-item>
+        <ion-item (click)="chatting()">
+            <div class="img-box">
+                <img src="assets/imgs/chat_2.jpg">
+            </div>
+            <div class="details">
+                <h2 class="text-white d-flex">{{'johnson_johnson' | translate}}<span class="end">{{'12_30' | translate}}</span></h2>
+                <p class=" d-flex">{{'thank_you_for' | translate}}<span class="end"></span></p>
+            </div>
+        </ion-item>
+        <ion-item (click)="chatting()">
+            <div class="img-box">
+                <img src="assets/imgs/chat_3.jpg">
+            </div>
+            <div class="details">
+                <h2 class="text-white d-flex">{{'the_johnson_shop' | translate}}<span class="end">{{'10_23' | translate}}</span></h2>
+                <p class=" d-flex">{{'we_are_available' | translate}}<span class="end"></span></p>
+            </div>
+        </ion-item>
+        <ion-item (click)="chatting()">
+            <div class="img-box">
+                <img src="assets/imgs/chat_4.jpg">
+            </div>
+            <div class="details">
+                <h2 class="text-white d-flex">{{'silver_leaf_restaurant' | translate}}<span class="end"> {{'10_30' | translate}}</span></h2>
+                <p class="d-flex">{{'just_a_10_mins_away' | translate}}<span class="end"></span></p>
+            </div>
+        </ion-item>
+        <ion-item (click)="chatting()">
+            <div class="img-box">
+                <img src="assets/imgs/chat_5.jpg">
+            </div>
+            <div class="details">
+                <h2 class="text-white d-flex">{{'back_beauty_salon' | translate}} <span class="end">{{'12_30' | translate}}</span></h2>
+                <p class=" d-flex"> {{'your_appointmnt' | translate}}<span class="end"></span></p>
+            </div>
+        </ion-item>
+        <ion-item (click)="chatting()">
+            <div class="img-box">
+                <img src="assets/imgs/chat_6.jpg">
+            </div>
+            <div class="details">
+                <h2 class="text-white d-flex">{{'rainbow_general_store' | translate}}<span class="end">{{'yesterday' | translate}}</span></h2>
+                <p class=" d-flex">{{'yes_now_its_available' | translate}}<span class="end"></span></p>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>

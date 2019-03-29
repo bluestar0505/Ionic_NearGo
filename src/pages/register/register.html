@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{'register' | translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="bg-color">
+    <div class="profile-img">
+        <div class="img-box">
+            <!--            <img src="assets/imgs/dp1.png">-->
+            <ion-icon name="md-person" class="text-white"></ion-icon>
+        </div>
+        <ion-icon name="md-camera" class="text-white bg-theme add-pic"></ion-icon>
+    </div>
+    <div class="form" padding-left padding-right>
+        <ion-list no-lines padding-left padding-right>
+            <ion-item>
+                <ion-label floating>{{'user_name' | translate}}</ion-label>
+                <ion-input type="email" value="Samantha Smith"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>{{'email_address' | translate}}</ion-label>
+                <ion-input type="email" value="samanthasmith@mail.com"></ion-input>
+            </ion-item>
+            <ion-item class="password">
+                <ion-label floating>{{'set_password' | translate}}</ion-label>
+                <ion-input type="password" class="password" value="******"></ion-input>
+            </ion-item>
+            <ion-item class="password">
+                <ion-label floating>{{'confirm_password' | translate}}</ion-label>
+                <ion-input type="password" class="password" value="******"></ion-input>
+            </ion-item>
+            <button ion-button block class="btn" (click)="tabs()" round>{{'register_now' | translate}}</button>
+        </ion-list>
+    </div>
+</ion-content>

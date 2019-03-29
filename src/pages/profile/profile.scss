@@ -1,0 +1,81 @@
+page-profile {
+    .header {
+        .toolbar-title {
+            span {
+                font-size: 1.95rem;
+            }
+        }
+    }
+    .profile-img {
+        height: 140px;
+        width: 140px;
+        margin: 25px auto 24px auto;
+        display: block;
+        position: relative;
+        .img-box {
+            background: lighten($gray, 30%);
+            width: 125px;
+            height: 125px;
+            margin: 0 auto;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            img {
+                position: absolute;
+                top: 0;
+                left: -50% !important;
+                right: -64% !important;
+                width: 160%;
+                max-width: unset;
+                height: 109%;
+                margin: auto;
+            }
+        }
+        ion-icon {
+            &.add-pic {
+                top: 7px;
+                right: 7px;
+                position: absolute;
+                width: 30px;
+                text-align: center;
+                height: 30px;
+                border-radius: 50%;
+                line-height: 30px;
+            }
+        }
+    }
+    .form {
+        .list {
+            margin-bottom: 0;
+        }
+        ion-item {
+            &.item-select {
+                .input-wrapper {
+                    display: block;
+                    ion-label {
+                        font-size: 1.3rem !important;
+                        font-weight: 300 !important;
+                        margin-bottom: 0;
+                    }
+                    ion-select {
+                        width: 100%;
+                        max-width: 100%;
+                        padding: 0;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        color: $white;
+                    }
+                    .select-icon {
+                        width: 18px;
+                        .select-icon-inner {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .button.btn {
+            margin-top: 82px;
+        }
+    }
+}

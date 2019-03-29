@@ -1,0 +1,94 @@
+<ion-header class="bg-transparent">
+    <ion-navbar>
+        <ion-title>{{'golden_bakery' | translate}}<span>{{'read_all' | translate}}</span></ion-title>
+    </ion-navbar>
+    <div class="banner">
+        <img src="assets/imgs/background.png" class="bg">
+        <h4 class="d-flex text-white">
+            <ion-badge item-end>{{'rating' | translate}}
+                <ion-icon name="md-star"></ion-icon>
+            </ion-badge>
+            {{'98_people_rated' | translate}}
+            <span class="text-theme end">{{'newest_firest' | translate}}
+            <ion-icon name="ios-arrow-down-outline" class="text-white"></ion-icon>
+                 </span>
+        </h4>
+    </div>
+</ion-header>
+
+<ion-content class="bg-color">
+    <ion-list no-lines>
+        <ion-item>
+            <div class="item_header d-flex">
+                <div class="profile d-flex">
+                    <div class="profile-img">
+                        <img src="assets/imgs/dp1.png">
+                    </div>
+                    <h2>
+                        {{'emilli_williamson' | translate}}
+                        <span class="text-gray">{{'15th_jan' | translate}}</span>
+                    </h2>
+                </div>
+                <div class="rating end">
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                    <ion-icon name="md-star" class=""></ion-icon>
+                </div>
+            </div>
+            <p class="text-white text">
+                {{'lorem_ipsum' | translate}}
+            </p>
+        </ion-item>
+        <ion-item>
+            <div class="item_header d-flex">
+                <div class="profile d-flex">
+                    <div class="profile-img">
+                        <img src="assets/imgs/dp2.png">
+                    </div>
+                    <h2>
+                        {{'george_taylor' | translate}}
+                        <span class="text-gray">{{'11th_jan' | translate}}</span>
+                    </h2>
+                </div>
+                <div class="rating end">
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                </div>
+            </div>
+            <p class="text-white text">
+                {{'lorem_ipsum' | translate}}
+            </p>
+        </ion-item>
+        <ion-item>
+            <div class="item_header d-flex">
+                <div class="profile d-flex">
+                    <div class="profile-img">
+                        <img src="assets/imgs/dp3.png">
+                    </div>
+                    <h2>
+                        {{'emilli_williamson' | translate}}
+                        <span class="text-gray">{{'15th_jan' | translate}}</span>
+                    </h2>
+                </div>
+                <div class="rating end">
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                    <ion-icon name="md-star" class="acteive"></ion-icon>
+                    <ion-icon name="md-star" class=""></ion-icon>
+                    <ion-icon name="md-star" class=""></ion-icon>
+                </div>
+            </div>
+            <p class="text-white text">
+                {{'lorem_ipsum' | translate}}
+            </p>
+        </ion-item>
+    </ion-list>
+    <div class="fixed-bottom" (click)="addreview()">
+        <ion-icon name="md-add" class="text-white bg-theme" text-center></ion-icon>
+    </div>
+</ion-content>

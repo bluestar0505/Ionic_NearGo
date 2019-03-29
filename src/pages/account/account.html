@@ -1,0 +1,47 @@
+<ion-header class="bg-transparent">
+    <ion-navbar>
+        <ion-title>{{'account' | translate}}</ion-title>
+    </ion-navbar>
+    <div class="banner">
+        <img src="assets/imgs/profile.png" class="bg">
+        <div class="profile d-flex" (click)="profile()">
+            <div class="profile-img">
+                <img src="assets/imgs/profile.png">
+            </div>
+            <h2>
+                {{'samantha_smith' | translate}}
+                <span class="text-gray">{{'view_profile' | translate}}</span>
+            </h2>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content class="bg-color">
+    <ion-list no-lines>
+        <ion-item (click)="saved()">
+            <img src="assets/imgs/ic_saved.png" item-start>
+            <h2 class="text-white">{{'saved_stores' | translate}}</h2>
+            <p class="text-gray">{{'view_list_of' | translate}}</p>
+        </ion-item>
+        <ion-item>
+            <img src="assets/imgs/ic_invite.png" item-start>
+            <h2 class="text-white">{{'invite_friends' | translate}}</h2>
+            <p class="text-gray">{{'invite_frindes_family' | translate}}</p>
+        </ion-item>
+        <ion-item (click)="help()">
+            <img src="assets/imgs/ic_help.png" item-start>
+            <h2 class="text-white">{{'need_help' | translate}}</h2>
+            <p class="text-gray">{{'faq' | translate}}</p>
+        </ion-item>
+        <ion-item>
+            <img src="assets/imgs/ic_rate.png" item-start>
+            <h2 class="text-white">{{'rate_app' | translate}}</h2>
+            <p class="text-gray">{{'rate_us' | translate}}</p>
+        </ion-item>
+        <ion-item (click)="condition()">
+            <img src="assets/imgs/ic_t_c.png" item-start>
+            <h2 class="text-white">{{'terms_conditions' | translate}}</h2>
+            <p class="text-gray">{{'our_terms_conditions' | translate}}</p>
+        </ion-item>
+    </ion-list>
+</ion-content>

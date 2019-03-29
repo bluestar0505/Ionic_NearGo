@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <ion-icon name="md-close" class="text-theme" (click)="dismiss()"></ion-icon>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+    <div class="form">
+        <ion-searchbar (ionInput)="getItems($event)" placeholder="{{'what_are_you_searching_for' | translate}}" class="text-white"></ion-searchbar>
+        <ion-list no-lines>
+            <ion-item *ngFor="let item of items">
+                {{ item }}
+            </ion-item>
+        </ion-list>
+
+        <div class="recent-serch">
+            <h2 class="text-gray">{{'recent_earches' | translate}}</h2>
+            <p class="text-white">{{'chinese_restaurant' | translate}}</p>
+            <p class="text-white">{{'formal_clothes' | translate}}</p>
+            <p class="text-white">{{'baked_cake' | translate}}</p>
+        </div>
+    </div>
+    <div class="categories">
+        <h2 class="text-gray d-flex">{{'choose_categories' | translate}}<span class="text-theme end" (click)="categories()">{{'view_all' | translate}}</span></h2>
+        <ion-list no-lines>
+            <ion-item>
+                <img src="assets/imgs/ca1.png" class="bg">
+                <div text-center class="text">
+                    <h2 class="text-white">{{'food_restaurants' | translate}}</h2>
+                    <p class="text-gray">{{'150_stores' | translate}}</p>
+                </div>
+            </ion-item>
+            <ion-item>
+                <img src="assets/imgs/ca2.png" class="bg">
+                <div text-center class="text">
+                    <h2 class="text-white"> {{'general_stores' | translate}}</h2>
+                    <p class="text-gray">198 Stores</p>
+                </div>
+            </ion-item>
+            <ion-item>
+                <img src="assets/imgs/ca4.png" class="bg">
+                <div text-center class="text">
+                    <h2 class="text-white">{{'dairy_bakery' | translate}}</h2>
+                    <p class="text-gray">{{'198_stores' | translate}}</p>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

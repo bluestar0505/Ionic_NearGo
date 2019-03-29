@@ -1,0 +1,58 @@
+<ion-header class="bg-transparent">
+    <ion-navbar>
+        <ion-title>
+            <ion-badge class="end">
+                <ion-icon name="md-stopwatch"></ion-icon>
+                {{'2_days' | translate}}
+            </ion-badge>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+    <div class="banner">
+        <ion-slides pager>
+            <ion-slide *ngFor="let slide of slides">
+                <img [src]="slide.image" class="slide-image" />
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <div class="details">
+        <div class="store-name">
+            <h2 class="text-white d-flex">{{'buy_2_pair' | translate}}
+                <ion-icon name="md-share" class="text-white end"></ion-icon>
+            </h2>
+        </div>
+        <div class="about">
+            <h3 class="text-white">{{'about_offer' | translate}}</h3>
+            <p class="text-white">{{'lorem_ipsum' | translate}}</p>
+        </div>
+        <div class="interested d-flex">
+            <h3 class="d-flex text-white">
+                126
+                <small class="text-gray">{{'people_interested' | translate}}</small>
+            </h3>
+            <button ion-button block class="btn text-theme end" outline round>{{'i_am_interested' | translate}}</button>
+        </div>
+
+        <div class="offer d-flex">
+            <h3 class=" text-white">
+                {{'offer_by' | translate}}
+                <span class="text-theme">{{'the_johnson_shop' | translate}}</span>
+                <small class="text-gray">{{'fashion_store' | translate}}</small>
+            </h3>
+            <p class="end text-theme">{{'view_store' | translate}}</p>
+        </div>
+        <div class="address">
+            <h3 class="text-white d-flex">{{'address' | translate}}
+                <span class="text-theme end ">{{'get_direction' | translate}}</span>
+            </h3>
+            <p class="text-white">{{'1124_old_church_street_250m' | translate}})</p>
+            <div class="map">
+                <img src="assets/imgs/map-location.png">
+            </div>
+            <img src="assets/imgs/ic_pin.png" class="location">
+        </div>
+    </div>
+
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header class="bg-transparent">
+    <ion-navbar>
+        <ion-title>{{'add_review' | translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+    <div class="banner">
+        <img src="assets/imgs/background.png" class="bg">
+        <div class="rating">
+            <ion-icon name="md-star-outline"></ion-icon>
+            <ion-icon name="md-star-outline"></ion-icon>
+            <ion-icon name="md-star-outline"></ion-icon>
+            <ion-icon name="md-star-outline"></ion-icon>
+            <ion-icon name="md-star-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="form">
+        <ion-list no-lines padding-left padding-right>
+            <ion-item>
+                <ion-input type="email" placeholder="{{'let_us_know' | translate}}"></ion-input>
+            </ion-item>
+            <button ion-button block class="btn" (click)="tabs()" round>{{'submit_review' | translate}}</button>
+        </ion-list>
+    </div>
+</ion-content>

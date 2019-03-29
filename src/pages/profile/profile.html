@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{'profile' | translate}}<span class="end" (click)="signin()">{{'logout' | translate}}</span></ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+    <div class="profile-img">
+        <div class="img-box">
+            <img src="assets/imgs/profile.png">
+        </div>
+        <ion-icon name="md-camera" class="text-white bg-theme add-pic"></ion-icon>
+    </div>
+    <div class="form" padding-left padding-right>
+        <ion-list no-lines padding-left padding-right>
+            <ion-item>
+                <ion-label floating>{{'user_name' | translate}}</ion-label>
+                <ion-input type="text" value="{{'samantha_smith' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>{{'email_address' | translate}}</ion-label>
+                <ion-input type="email" value="{{'email_id' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>{{'phone_number' | translate}}</ion-label>
+                <ion-input type="text" value="{{'1_987_654_3210' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>{{'gender' | translate}}</ion-label>
+                <ion-select [(ngModel)]="gender">
+                    <ion-option value="female">{{'female' | translate}}</ion-option>
+                    <ion-option value="male">{{'male' | translate}}</ion-option>
+                </ion-select>
+            </ion-item>
+            <button ion-button block class="btn" round>{{'update_profile' | translate}}</button>
+        </ion-list>
+    </div>
+</ion-content>

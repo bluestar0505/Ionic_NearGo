@@ -1,0 +1,18 @@
+page-help {
+    .list {
+        margin: 0;
+        .item-inner {
+            padding: 0;
+        }
+        .label {
+            margin-right: 0;
+        }
+        .item {
+            padding: 10px 23px;
+            background: none;
+            h2 {
+                font-size: 1.9rem;
+            }
+        }
+    }
+}

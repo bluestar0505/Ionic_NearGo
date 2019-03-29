@@ -1,0 +1,422 @@
+@font-face {
+    font-family: 'google_sans';
+    src: url('googlesans-bold-webfont.woff2') format('woff2'), url('googlesans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'google_sans';
+    src: url('../googlesans-medium-webfont.woff2') format('woff2'), url('googlesans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'google_sans';
+    src: url('../assets/font/googlesans-mediumitalic-webfont.woff2') format('woff2'), url('googlesans-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'google_sans';
+    src: url('../assets/font/googlesans-regular-webfont.woff2') format('woff2'), url('googlesans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'google_sans';
+    src: url('../assets/font/googlesans-bold-webfont.woff2') format('woff2'), url('googlesans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'google_sans';
+    src: url('../assets/font/googlesans-medium-webfont.woff2') format('woff2'), url('googlesans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'google_sans';
+    src: url('../assets/font/googlesans-regular-webfont.woff2') format('woff2'), url('googlesans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/font/material_icons.woff2') format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+body,
+html,
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+d,
+strong,
+lable,
+li {
+    font-family: 'google_sans';
+    letter-spacing: .05rem;
+}
+
+$theme-color:#fd7821;
+$text-theme-color:$theme-color;
+$gray:#999999;
+$white:#fff;
+$black:#000;
+$dark:#181818;
+$bg-color:$dark;
+$text-light:#cccccc;
+$light-green:#00dea2;
+.text-ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bg-color {
+    background: $bg-color;
+}
+
+.bg-theme {
+    background: $theme-color;
+}
+
+.text-theme {
+    color: $theme-color!important;
+}
+
+.text-white {
+    color: $white !important;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.fixed-bottom {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+}
+
+.d-flex {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    .end {
+        margin-left: auto;
+        margin-right: 0;
+        display: block;
+    }
+}
+
+.button {
+    &.btn {
+        font-size: 1.7rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        height: 55px;
+        box-shadow: none;
+        background: $theme-color;
+        text-transform: none;
+        &:hover:not(.disable-hover) {
+            background: $theme-color;
+        }
+        &[outline] {
+            background: none;
+            border: 1px solid $theme-color;
+            &:hover:not(.disable-hover) {
+                background: none;
+            }
+        }
+    }
+}
+
+.header {
+    &.bg-transparent {
+        .toolbar-background {
+            background: transparent !important;
+        }
+    }
+    &::after {
+        display: none;
+    }
+    .toolbar {
+        .toolbar-background {
+            background-color: $bg-color;
+            border: none !important;
+        }
+        .title {
+            .toolbar-title {
+                font-size: 2.27rem;
+                font-weight: 400;
+                color: $white;
+                align-items: center;
+                display: flex;
+                letter-spacing: 1px;
+                .end {
+                    margin-left: auto !important;
+                    img {
+                        width: 22px;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+        .back-button {
+            color: $theme-color;
+            .ion-md-arrow-back:before {
+                content: "\f3cf";
+            }
+        }
+        &.toolbar-ios {
+            ion-title {
+                padding: 0 20px;
+                text-align: right;
+                .toolbar-title-ios {
+                    text-align: justify;
+                }
+            }
+            .back-button-text {
+                display: none;
+            }
+            .back-button.show-back-button {
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+ion-segment-button {
+    background: none !important;
+    border: none !important;
+}
+
+ion-tabs {
+    .tabbar {
+        background: darken($bg-color, 20%) !important;
+        .tab-button {
+            background-repeat: no-repeat !important;
+            text-align: center !important;
+            background-position: center !important;
+            background-position-y: 6px !important;
+            background-size: 23px !important;
+            border-top: 2px solid transparent;
+            opacity: 1 !important;
+            .tab-button-text {
+                margin-top: 16px;
+                font-size: .9rem;
+            }
+            &:nth-child(1) {
+                background: url(../assets/imgs/ic_neargo-1.png);
+                background-size: 15px !important;
+            }
+            &:nth-child(2) {
+                background: url(../assets/imgs/ic_category.png);
+            }
+            &:nth-child(3) {
+                background: url(../assets/imgs/ic_chat-1.png);
+            }
+            &:nth-child(4) {
+                background: url(../assets/imgs/ic_account.png);
+                background-size: 18px !important;
+            }
+            &[aria-selected=true] {
+                border-top: 2px solid $theme-color;
+                &:nth-child(1) {
+                    background: url(../assets/imgs/ic_neargo.png);
+                }
+                &:nth-child(2) {
+                    background: url(../assets/imgs/ic_category-1.png);
+                }
+                &:nth-child(3) {
+                    background: url(../assets/imgs/ic_chat-1.png);
+                }
+                &:nth-child(4) {
+                    background: url(../assets/imgs/ic_account-3.png);
+                }
+            }
+        }
+    }
+    &.tabs-ios {
+        .tabbar {
+            .tab-button {
+                min-height: 5.6rem;
+                .tab-button-text {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}
+
+.form {
+    padding: 0 13px;
+    .item {
+        padding-left: 0;
+        border-bottom: 1px solid darken($gray, 30%) !important;
+        margin-top: 9px;
+        box-shadow: none !important;
+        background: none;
+        .item-inner {
+            border: none !important;
+            box-shadow: none !important;
+            margin-left: 0 !important;
+            padding: 0;
+            .text-input-wp {
+                border-color: transparent !important;
+                padding-left: 0 !important;
+                margin-left: 0 !important;
+            }
+            .label {
+                font-size: 1.55rem;
+                font-weight: inherit;
+                color: lighten($gray, 20%);
+                text-transform: none;
+                letter-spacing: 1px;
+                opacity: 1 !important;
+            }
+            ion-input {
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin-top: 0px;
+                color: $white;
+                .text-input {
+                    margin-top: 0px;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+        &.item-input-has-focus {
+            .label {
+                color: $gray;
+            }
+        }
+        &.password {
+            ion-input {
+                .text-input {
+                    letter-spacing: 5px;
+                }
+            }
+        }
+    }
+}
+
+[dir="rtl"] body {
+    .header .toolbar .title .toolbar-title .end {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+    .form {
+        .item {
+            .item-inner {
+                padding-right: 0;
+                .label {
+                    &[floating] {
+                        -webkit-transform-origin: right top;
+                        margin-right: 0;
+                    }
+                }
+            }
+            ion-input {
+                .text-input {
+                    text-align: right;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .d-flex {
+        .end {
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+    page-signin .form .socile .button ion-icon {
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+    page-store .details {
+        .store-name h4 ion-badge {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+        .row.contact .opening {
+            border-right: 0;
+            border-left: 0.5px solid #fd7821;
+        }
+    }
+    page-map .fixed-bottom ion-card ion-label {
+        p img {
+            margin-right: 0;
+            margin-left: 5px;
+        }
+        h3 ion-badge {
+            margin-right: 0;
+            margin-left: 5px;
+        }
+    }
+    page-account .header .banner .profile {
+        h2 {
+            margin-right: 15px;
+            margin-left: 0;
+        }
+        .profile-img img {
+            left: 0;
+            right: -26px;
+        }
+    }
+    page-chats .list .item .item-inner ion-label {
+        .details {
+            left: unset;
+            margin: auto;
+            right: -19px;
+        }
+        .img-box {
+            &::after {
+                left: -3px;
+                right: unset;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    page-saved .list .item ion-badge,
+    page-home .list .item ion-badge {
+        right: unset;
+        left: 0;
+        margin-left: 15px;
+    }
+}

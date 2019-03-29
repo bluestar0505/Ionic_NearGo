@@ -1,0 +1,80 @@
+<ion-header class="">
+    <ion-navbar>
+        <ion-title>{{'find_in_map' | translate}}
+            <span class="end"><img src="assets/imgs/ic_search.png" (click)="search()"></span>
+        </ion-title>
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+    <div class="map">
+        <img src="assets/imgs/map.jpg">
+    </div>
+    <div class="near-you">
+        <img src="assets/imgs/ic_pin.png" style="top:30%; left: 10%">
+        <img src="assets/imgs/ic_pin.png" style="top:50%; left: 20%">
+        <img src="assets/imgs/ic_pin.png" style="top:40%; left: 40%">
+        <img src="assets/imgs/ic_pin.png" style="top:60%; left: 50%">
+    </div>
+    <div class="your_location">
+        <ion-icon class="material-icons">
+            brightness_1
+        </ion-icon>
+    </div>
+    <div class="location">
+        <img src="assets/imgs/ic_pin-3.png" style="top:45%; left: 45%">
+    </div>
+    <div class="fixed-bottom">
+        <ion-scroll scrollX="true" style="height: 108px;white-space: nowrap;">
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/background.png">
+                    </ion-avatar>
+                    <h2>{{'golden_bakery' | translate}}</h2>
+                    <p class="d-flex"><img src="assets/imgs/ic_neargo-5.png">{{'1124_old_church_street_250m' | translate}}</p>
+                    <h3 class="d-flex">
+                        <ion-badge item-end>{{'rating' | translate}}
+                            <ion-icon name="md-star"></ion-icon>
+                        </ion-badge>
+                        <span>{{'dairy_bakery' | translate}}</span>
+                        <span class="end"><img src="assets/imgs/ic_direction.png" ></span>
+                    </h3>
+                </ion-item>
+            </ion-card>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/2.png">
+                    </ion-avatar>
+                    <h2>{{'blackfox_grocary_store' | translate}}</h2>
+                    <p class="d-flex"><img src="assets/imgs/ic_neargo-5.png">{{'1022_parkar_stree' | translate}}</p>
+                    <h3 class="d-flex">
+                        <ion-badge item-end>{{'rating' | translate}}
+                            <ion-icon name="md-star"></ion-icon>
+                        </ion-badge>
+                        <span>{{'grocery_store' | translate}}</span>
+                        <span class="end"><img src="assets/imgs/ic_direction.png" ></span>
+                    </h3>
+                </ion-item>
+            </ion-card>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/3.png">
+                    </ion-avatar>
+                    <h2>{{'hill_top_dairy_store' | translate}}</h2>
+                    <p class="d-flex"><img src="assets/imgs/ic_neargo-5.png">{{'1208_opera_house_street' | translate}}</p>
+                    <h3 class="d-flex">
+                        <ion-badge item-end>{{'rating' | translate}}
+                            <ion-icon name="md-star"></ion-icon>
+                        </ion-badge>
+                        <span>{{'dairy_bakery' | translate}}</span>
+                        <span class="end"><img src="assets/imgs/ic_direction.png" ></span>
+                    </h3>
+                </ion-item>
+            </ion-card>
+        </ion-scroll>
+    </div>
+</ion-content>

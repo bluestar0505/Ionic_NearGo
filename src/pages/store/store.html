@@ -1,0 +1,55 @@
+<ion-header class="bg-transparent">
+    <ion-navbar>
+        <ion-title></ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+    <div class="banner">
+        <ion-slides pager>
+            <ion-slide *ngFor="let slide of slides">
+                <img [src]="slide.image" class="slide-image" />
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <div class="details">
+        <div class="store-name">
+            <h2 class="text-white">{{'golden_bakery' | translate}}</h2>
+            <p class="d-flex text-gray">{{'dairy_bakery' | translate}}
+                <ion-icon name="md-share" class="text-white end"></ion-icon>
+            </p>
+            <h4 class="d-flex text-white">
+                <ion-badge item-end class="bg-theme text-white">{{'rating' | translate}}
+                    <ion-icon name="md-star"></ion-icon>
+                </ion-badge>
+                {{'98_people_rated' | translate}}<span class="end text-theme" (click)="review()">{{'read_all' | translate}}</span>
+            </h4>
+        </div>
+        <div class="about">
+            <h3 class="text-white">{{'aboput' | translate}}</h3>
+            <p class="text-white">{{'lorem_ipsum' | translate}}</p>
+        </div>
+        <div class="contact d-flex">
+            <div class="opening">
+                <h3 class="text-white">{{'opening_hours' | translate}}</h3>
+                <p class="text-theme">{{'open_now' | translate}}<span class="text-white">{{'open_time' | translate}}</span></p>
+            </div>
+            <div text-end class="end">
+                <ion-icon name="md-heart" class="text-white bg-theme fevret"></ion-icon>
+                <ion-icon name="md-chatboxes" class="heart text-white bg-theme"></ion-icon>
+                <ion-icon name="md-call" class="text-white bg-theme"></ion-icon>
+            </div>
+        </div>
+        <div class="address">
+            <h3 class="text-white d-flex">{{'address' | translate}}
+                <span class="text-theme end ">{{'get_direction' | translate}}</span>
+            </h3>
+            <p class="text-white">{{'1124_old_church_street_250m' | translate}})</p>
+            <div class="map">
+                <img src="assets/imgs/map-location.png">
+            </div>
+            <img src="assets/imgs/ic_pin.png" class="location">
+        </div>
+    </div>
+
+</ion-content>

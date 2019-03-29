@@ -1,0 +1,56 @@
+page-register {
+    .profile-img {
+        height: 140px;
+        width: 140px;
+        margin: 20px auto 20px auto;
+        display: block;
+        position: relative;
+        .img-box {
+            background: lighten($gray, 30%);
+            width: 130px;
+            height: 130px;
+            margin: 0 auto;
+            border-radius: 50%;
+            position: relative;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                max-width: unset;
+                height: 100%;
+            }
+            ion-icon {
+                top: 0;
+                font-size: 8rem;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 58px;
+                height: 9px;
+                line-height: 0;
+                display: block;
+            }
+        }
+        ion-icon {
+            &.add-pic {
+                top: 7px;
+                right: 7px;
+                position: absolute;
+                width: 30px;
+                text-align: center;
+                height: 30px;
+                border-radius: 50%;
+                line-height: 30px;
+            }
+        }
+    }
+    .btn {
+        margin-top: 76px;
+    }
+    .form {
+        padding-top: 15px;
+    }
+}
